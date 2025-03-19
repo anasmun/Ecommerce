@@ -14,5 +14,31 @@ nav {
   }
   .titulo{
     color:rgb(38, 165, 38);
+  }
+  .letras{
+    font-size: 40px;
+    display: center;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .pescados{
+    float: right;
+    margin-left: 20px;
+  }
+  .cosechas{
+    text-align: center;
   }  
-  
+  .Harina{
+    display: inline-block;
+    margin-right: 400px;
+  }
+  .foto{
+    display: inline-block;
+    margin-right: 40px;
+  }
+  .texto{
+    display: inline-block;
+  }
+  .valores{
+    margin-right: 90px;
+  }
