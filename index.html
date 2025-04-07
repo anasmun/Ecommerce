@@ -1,69 +1,97 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Página HTML</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="crumbs">
-        <ol>
-          <img
-            class="foto"
-            src="https://img.freepik.com/vector-premium/ilustracion-dibujos-animados-tienda-linea_1294240-23769.jpg"
-            alt="Logo"
-            width="75px"
-            height="75px"
-          />
-          <li class="crumb"><a href="#">Vegetales</a></li>
-          <li class="crumb"><a href="#">Carnes</a></li>
-          <li class="crumb"><a href="#">Frutas</a></li>
-          <li class="Harina"><a href="#">Harinas</a></li>
-          <input
-            class="search-container"
-            type="text"
-            placeholder="Buscar..."
-            id="search-input"
-          />
-          <button onclick="search()">Buscar</button>
-        </ol>
-      </nav>
-    </header>
-    <div class="fotos">
-      <img
-        class="verduras"
-        src="https://tuagro.com/wp-content/uploads/2022/04/caida-precio-comida.jpeg"
-        alt="Mercado"
-        width="385px"
-        height="385px"
-      />
-      <p class="letras">Compra en el mercadito todo lo que necesites...</p>
-      <img
-        class="pescados"
-        src="https://blog.froztec.com/hubfs/Fishing-Industry.jpg"
-        alt="Mercado"
-        width="385px"
-        height="385px"
-      />
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SHOP.CO</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <!--<style>
+    * {
+      border: 1px solid red;
+  } 
+  </style>-->
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="navbar">
+      <div class="logo">SHOP.CO</div>
+      <div class="nav-links">
+        <div class="dropdown">Shop <i class="fas fa-chevron-down"></i></div>
+        <div>On Sale</div>
+        <div>New Arrivals</div>
+        <div>Brands</div>
+      </div>
+      <div class="search-bar">
+        <div class="search-container">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search for products..." />
+        </div>
+      </div>
+      <div class="icons">
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-user-circle"></i>
+      </div>
     </div>
-    <br />
-    <button>Shop now</button>
-    <b class="valores">200+</b>
-    <b class="valores">2000+</b>
-    <b class="valores">30000+</b>
-    <br />
-    <h3 class="texto">internal brand</h3>
-    <h3 class="texto">internal brand</h3>
-    <h3 class="texto">internal brand</h3>
-    <div>
-      <h1 class="cosechas">Cosechas</h1>
+  </nav>
+  <!-- Header/Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>FIND CLOTHES<br>THAT MATCHES<br>YOUR STYLE</h1>
+        <p>Browse through our diverse range of meticulously crafted garments, designed<br>to bring out your
+          individuality and cater to your sense of style.</p>
+        <button>Shop Now</button>
+        <div class="stats">
+          <div>
+            <h2>200+</h2>
+            <p>International Brands</p>
+          </div>
+          <div>
+            <h2>2,000+</h2>
+            <p>High-Quality Products</p>
+          </div>
+          <div>
+            <h2>30,000+</h2>
+            <p>Happy Customers</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://placehold.co/500x500?text=Add+Image"
+          alt="Stylish man and woman wearing matching fashion outfits" />
+        <!-- <div class="decor decor-1">✦</div>
+        <div class="decor decor-2">✦</div> -->
+      </div>
     </div>
-    <div>
-      <h1 class="cosechas">Lo más vendido</h1>
+  </header>
+  <h1>NEW ARRIVALS</h1>
+  <div class="container">
+    <div class="card">
+      <img class="card__image" src="https://placehold.co/50" alt="User Avatar">
+      <div class="card__content">
+        <h3>Alex Doe</h3>
+        <p>Web Developer fkjdfksdjfdf</p>
+        <h4>$500</h4>
+      </div>
     </div>
-    <div class="cuadrado">
+    <div class="card">
+      <img class="card__image" src="https://placehold.co/100" alt="User Avatar">
+      <div class="card__content">
+        <h3 class="card__title">Alex Doe</h3>
+        <p class="card__description">Web Developer</p>
+        <h4 class="card__title">$500</h4>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card__image" src="https://placehold.co/100" alt="User Avatar">
+      <div class="card__content">
+        <h3 class="card__title">Alex Doe</h3>
+        <p class="card__description">Web Developer</p>
+        <h4 class="card__title">$500</h4>
+      </div>
+    </div>
+    <body>
       <div class="contenedor">
         <h2 class="titulo">Hola Mundo</h2>
         <div class="item1"></div>
@@ -71,82 +99,6 @@
         <div class="item3"></div>
         <div class="item4"></div>
       </div>
-    </div>
-    <br>
-    <br>
-    <div class="carusel">
-      <div class="slider">
-        <div class="slide" id="slide-1">
-          <img src="./images/fresas.png" />
-        </div>
-        <div class="slide" id="slide-2"><img src="./images/uvas.png" /></div>
-        <div class="slide" id="slide-3"><img src="./images/kiwi.png" /></div>
-        <div class="slide" id="slide-4">
-          <img src="./images/manzana.png" />
-        </div>
-      </div>
-      <div class="slider">
-        <div class="slide" id="slide-1">
-          <img src="./images/fresas.png" />
-        </div>
-        <div class="slide" id="slide-2"><img src="./images/uvas.png" /></div>
-        <div class="slide" id="slide-3"><img src="./images/kiwi.png" /></div>
-        <div class="slide" id="slide-4">
-          <img src="./images/manzana.png" />
-        </div>
-      </div>
-      <div class="slider">
-        <div class="slide" id="slide-1">
-          <img src="./images/fresas.png" />
-        </div>
-        <div class="slide" id="slide-2"><img src="./images/uvas.png" /></div>
-        <div class="slide" id="slide-3"><img src="./images/kiwi.png" /></div>
-        <div class="slide" id="slide-4">
-          <img src="./images/manzana.png" />
-        </div>
-      </div>
-      <div class="slider">
-        <div class="slide" id="slide-1">
-          <img src="./images/fresas.png" />
-        </div>
-        <div class="slide" id="slide-2"><img src="./images/uvas.png" /></div>
-        <div class="slide" id="slide-3"><img src="./images/kiwi.png" /></div>
-        <div class="slide" id="slide-4">
-          <img src="./images/manzana.png" />
-        </div>
-      </div>
-    </div>
-    <button>View All</button>
-    <h1 class="titulo">Mercado campesino</h1>
-    <p>
-      La idea del mercado campesino, es el poder comprar productos elaborados en
-      el país, apoyando a aquellas personas que están iniciando su venta.
-    </p>
-
-    <main>
-      <section>
-        <h2></h2>
-        <p></p>
-      </section>
-      <section>
-        <h2></h2>
-        <p></p>
-      </section>
-      <section>
-        <h2></h2>
-        <p></p>
-      </section>
-      <section>
-        <h2></h2>
-        <p></p>
-      </section>
-      <section>
-        <h2></h2>
-        <p></p>
-      </section>
-    </main>
-    <footer>
-      <p></p>
-    </footer>
-  </body>
+    </body>
 </html>
+
